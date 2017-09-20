@@ -14,12 +14,12 @@ The annotation tool is a web-based software, and for this reason it simply requi
 ### Installation
 - Clone the repository using `git clone https://github.com/PHuSeLab/DANTE.git`.
 - Import in a MySQL database the file `annotationdb.sql`, which is responsible of the creation of all the needed tables.
-- Edit the file `config.php` according to the environment. (For more details, see section [configuration][].
+- Edit the file `config.php` according to the environment. (For more details, see section [configuration](#config).
 - Open the browser to the page `http://localhost/login.php` or wherever you installed DANTE.
 - Login with default credentials `admin:admin`.
 - Follow the configuration instructions and **change the default password**!
 
-### Configuration [configuration]
+### <a name="config"></a>Configuration
 The configuration file contained in `config.php` is very simple and permits to configure some basics parameters, such as:
 - `db_host` correspond to the hostname of the database (default: localhost).
 - `db_name` correspond the database name to use and is the one where was imported the annotationdb.sql file (default: annotationdb).
