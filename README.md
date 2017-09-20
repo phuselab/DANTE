@@ -1,3 +1,5 @@
+<img src="img/logo.png" alt="logo" width="100px"><img src="img/logo_phuse_1b_fit.png" alt="logo" width="100px">
+
 # DANTE
 ## Dimensional ANnotation Tool for Emotions
 ### Description
