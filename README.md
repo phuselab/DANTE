@@ -7,7 +7,7 @@ For more information or to use the tool in other works, please refer to:
 > Boccignone, G., Conte, D., Cuculo, V. and Lanzarotti, R. (2017) **AMHUSE: A Multimodal dataset for HUmour SEnsing**. In *Proceedings of 19th ACM International Conference on Multimodal Interaction.* (ICMI'17), ACM.  
 DOI: [10.1145/3136755.3136806](http://doi.org/10.1145/3136755.3136806 "10.1145/3136755.3136806")
 
-<img src="img/logo.png" alt="logo" height="50px"> <img src="img/logo_phuse_1b_fit.png" alt="logo" height="50px"> <img src="img/loghi_uni.png" alt="logo" height="80px">
+<a href="http://phuselab.di.unimi.it/DANTE/default.html"><img src="img/logo.png" alt="logo" height="50px"></a>  <a href="http://phuselab.di.unimi.it/"><img src="img/logo_phuse_1b_fit.png" alt="logo" height="50px"></a>  <a href="http://www.unimi.it/"><img src="img/logo_uni1.png" alt="logo" height="50px"></a>  <a href="http://www.univ-tours.fr/"> <img src="img/logo_uni2.png" alt="logo" height="50px"></a>
 
 ### Demo
 
