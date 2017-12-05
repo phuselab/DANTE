@@ -1,21 +1,21 @@
+<img src="img/dante1.png"  width="80%">
 
-<img src="img/dante1.png">
+### Description
+DANTE (Dimensional ANnotation Tool for Emotions) is a project developed by the [PHuSe Lab](http://phuselab.di.unimi.it "PHuSe Lab") from Università degli Studi di Milano, Italy, in collaboration with Département Informatique de Ecole Polytechnique de l'Université François Rabelais de Tours, France. The tool is part of a multimodal dataset acquired with the aim to study emotional response in presence of amusement stimulus.
+For more information or to use the tool in other works, please refer to:
 
-### DEMO
+> Boccignone, G., Conte, D., Cuculo, V. and Lanzarotti, R. (2017) **AMHUSE: A Multimodal dataset for HUmour SEnsing**. In *Proceedings of 19th ACM International Conference on Multimodal Interaction.* (ICMI'17), ACM.  
+DOI: [10.1145/3136755.3136806](http://doi.org/10.1145/3136755.3136806 "10.1145/3136755.3136806")
+
+<img src="img/logo.png" alt="logo" height="50px"> <img src="img/logo_phuse_1b_fit.png" alt="logo" height="50px"> <img src="img/loghi_uni.png" alt="logo" height="80px">
+
+### Demo
 
 For a test demo, go to the following link:
 
 http://phuselab.di.unimi.it/DANTE/index.php?id=3497&vid=30_3.mp4&type=arousal
 
-### Description
-DANTE (Dimensional ANnotation Tool for Emotions) is a project developed by the [PHuSe Lab](http://phuselab.di.unimi.it "PHuSe Lab") from Università degli Studi di Milano, Italy, in collaboration with Département Informatique de Ecole Polytechnique de l'Université François Rabelais de Tours, France.  
-The tool is part of a multimodal dataset acquired with the aim to study emotional response in presence of amusement stimulus.
-For more information or to use the tool in other works, please cite:
-
-> Boccignone, G., Conte, D., Cuculo, V. and Lanzarotti, R. (2017) **AMHUSE: A Multimodal dataset for HUmour SEnsing**. In *Proceedings of 19th ACM International Conference on Multimodal Interaction.* (ICMI'17), ACM.  
-DOI: [10.1145/3136755.3136806](http://doi.org/10.1145/3136755.3136806 "10.1145/3136755.3136806")
-
-<img src="img/logo.png" alt="logo" width="80px"><img src="img/logo_phuse_1b_fit.png" alt="logo" width="80px">
+<img src="img/dante2.png"  width="80%">
 
 ### Requirements
 The annotation tool is a web-based software, and for this reason it simply requires a LAMP/MAMP/WAMP software bundle, depending on the operating system. In other terms, it requires: **Apache HTTP Server**, **MySQL** and **PHP**.
