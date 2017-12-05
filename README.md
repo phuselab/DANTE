@@ -1,7 +1,5 @@
-<img src="img/logo.png" alt="logo" width="100px"><img src="img/logo_phuse_1b_fit.png" alt="logo" width="100px">
 
-# DANTE
-## Dimensional ANnotation Tool for Emotions
+<img src="img/dante1.png">
 
 ### DEMO
 
@@ -16,6 +14,8 @@ For more information or to use the tool in other works, please cite:
 
 > Boccignone, G., Conte, D., Cuculo, V. and Lanzarotti, R. (2017) **AMHUSE: A Multimodal dataset for HUmour SEnsing**. In *Proceedings of 19th ACM International Conference on Multimodal Interaction.* (ICMI'17), ACM.  
 DOI: [10.1145/3136755.3136806](http://doi.org/10.1145/3136755.3136806 "10.1145/3136755.3136806")
+
+<img src="img/logo.png" alt="logo" width="80px"><img src="img/logo_phuse_1b_fit.png" alt="logo" width="80px">
 
 ### Requirements
 The annotation tool is a web-based software, and for this reason it simply requires a LAMP/MAMP/WAMP software bundle, depending on the operating system. In other terms, it requires: **Apache HTTP Server**, **MySQL** and **PHP**.
