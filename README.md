@@ -2,7 +2,8 @@
 
 ### Description
 DANTE (Dimensional ANnotation Tool for Emotions) is a project developed by the [PHuSe Lab](http://phuselab.di.unimi.it "PHuSe Lab") from Università degli Studi di Milano, Italy, in collaboration with Département Informatique de Ecole Polytechnique de l'Université François Rabelais de Tours, France. The tool is part of a multimodal dataset acquired with the aim to study emotional response in presence of amusement stimulus.
-For more information or to use the tool in other works, please refer to:
+
+For more information or to use the tool in other works, please cite:
 
 > Boccignone, G., Conte, D., Cuculo, V. and Lanzarotti, R. (2017) **AMHUSE: A Multimodal dataset for HUmour SEnsing**. In *Proceedings of 19th ACM International Conference on Multimodal Interaction.* (ICMI'17), ACM.  
 DOI: [10.1145/3136755.3136806](http://doi.org/10.1145/3136755.3136806 "10.1145/3136755.3136806")
