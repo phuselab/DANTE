@@ -50,7 +50,6 @@ The configuration file contained in `config.php` is very simple and permits to c
 - `anno_rate` annotation recording frequency. DANTE will record a value every 1/anno_rate seconds (default: '25').
 - `save_mode` DANTE is able to save the annotations to the database `db` or to a text file `file` (default: 'db'). Before using `file` mode check permission of the `annotation` folder.
 
-
 ## Reference
 
 If you use this code or data, please cite the paper:
