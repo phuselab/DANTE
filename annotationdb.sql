@@ -19,8 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `annotationdb`
 --
--- CREATE DATABASE annotationdb;
--- USE phuselab;
+CREATE DATABASE dantedb;
+USE dantedb;
 -- --------------------------------------------------------
 
 --
