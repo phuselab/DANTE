@@ -5,10 +5,12 @@
     //Questo script ricerca/crea la cartella dedicata all'utente e al video appena visto, 
     //crea un file csv che riporta il tipo di video analizzato e crea una tabella csv con il seguente formato:
     //TimeStamp - UserId - NameVideo - TypeVideo - Value
-    include 'model.php';
+    if (isset($_POST['data'])) {
+        include 'model.php';
 
-    if(isset($_POST['data'])){
-        $data = json_decode(stripslashes($_POST['data']));
+        $data = filter_input(INPUT_POST, 'data'); 
+
+        $data = json_decode(stripslashes($data));
         
         $userId = $data->userId;
         $video = $data->video;

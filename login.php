@@ -7,9 +7,16 @@
     if(isset($_POST['btnAccedi'])){
         include 'model.php';
         $admin = model::getAdmin();
-        
+
+        if (isset($_POST['user'])) {
+            $user = filter_input(INPUT_POST, 'user', FILTER_SANITIZE_SPECIAL_CHARS); 
+        }
+        if (isset($_POST['psw'])) {
+            $psw = filter_input(INPUT_POST, 'psw', FILTER_SANITIZE_SPECIAL_CHARS); 
+        }        
+
         while ($row = mysqli_fetch_array($admin)){
-            if($_POST['user'] == $row['username'] && $_POST['psw'] == $row['password']){
+            if ($user == $row['username'] && ($row['password'] == 'admin' || password_verify($psw, $row['password']))){
                 $_SESSION['loggedin'] = true;
                 header("Location: panelControl.php");
             }

@@ -15,7 +15,8 @@
            $stmt->bind_param("s", $id);
            $stmt->execute();
            $result = $stmt->get_result();
-           return $result;            
+           $row = $result->fetch_row();
+           return $row;            
         }
 
         //Dato l'id utente ritorna i video a lui assegnati in base al gruppo di appartenenza

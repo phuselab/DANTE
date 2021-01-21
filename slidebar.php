@@ -1,7 +1,13 @@
         
-        <?php 
-            $start_lbl = ($_GET['type'] == "arousal") ? 'Very Passive' : 'Very Negative';
-            $end_lbl   = ($_GET['type'] == "arousal") ? 'Very Active' : 'Very Positive';
+        <?php
+            $type = "";
+
+            if (isset($_GET['type'])) {
+                $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_SPECIAL_CHARS); 
+            }         
+
+            $start_lbl = ($type == "arousal") ? 'Very Passive' : 'Very Negative';
+            $end_lbl   = ($type == "arousal") ? 'Very Active' : 'Very Positive';
         ?>
 
         <input onblur="this.focus()" autofocus id="slider" data-slider-id='annoSlider' type="text" data-slider-min="-1" data-slider-max="1" data-slider-step="0.001" data-slider-value="0" data-slider-ticks="[-1, 0, 1]"
@@ -10,9 +16,9 @@
         <!--carico immagine del sam in base al tipo di video-->
         <div class="sam">
                 <?php 
-                if($_GET['type'] == "arousal"){
+                if($type == "arousal"){
                     echo '<img class="samimg" src="img/samarousal.png"/>';
-                }else if($_GET['type'] == "valence"){
+                }else if($type == "valence"){
                     echo '<img class="samimg" src="img/samvalence.png"/>';
                 }
                 ?>

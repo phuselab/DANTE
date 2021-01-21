@@ -2,11 +2,12 @@
     session_start();
 
     if($_SESSION['loggedin']){
-        if(isset($_POST['data'])){
-
+        if (isset($_POST['data'])) {
+            $data = filter_input(INPUT_POST, 'data'); 
+            
             include 'model.php';
 
-            $data = json_decode(stripslashes($_POST['data']));
+            $data = json_decode(stripslashes($data));
 
             $name = $data->name;
             $surname = $data->surname;

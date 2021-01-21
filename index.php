@@ -2,13 +2,26 @@
 <html lang="en">
 
 <?php
-    if (isset($_GET['id'])){
-        $id = $_GET['id'];
+    $id = "";
+    $vid = "";
+    $type = "";
+    
+    if (isset($_GET['id'])) {
+        $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS); 
         include 'model.php';
 
         if (!model::doesUserExist($id)){
             header("Location: ../default.html");
+        } else {
+
+            if (isset($_GET['vid'])) {
+                $vid = filter_input(INPUT_GET, 'vid', FILTER_SANITIZE_SPECIAL_CHARS); 
+            }
+            if (isset($_GET['type'])) {
+                $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_SPECIAL_CHARS); 
+            }            
         }
+
     } else {
         header("Location: ../default.html");
 
@@ -143,7 +156,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-10 videoFrame" style="display: <?php if(isset($_GET['vid'])) echo 'block'; else echo 'none' ?>">
+                    <div class="col-lg-10 videoFrame" style="display: <?php if($vid !== '') echo 'block'; else echo 'none' ?>">
 
                         <div id="saving" class="alert alert-info" style="display: none">
                             <strong>Saving</strong> Please wait...
@@ -259,9 +272,9 @@
 
     var arrayAnnot = 
         {
-            userId:<?php echo $_GET['id'] ?>,
-            video:<?php echo '"'.$_GET['vid'].'"' ?>,
-            type:<?php echo '"'.$_GET['type'].'"' ?>,
+            userId:<?php echo $id ?>,
+            video:<?php echo '"'.$vid.'"' ?>,
+            type:<?php echo '"'.$type.'"' ?>,
             valvid:[]
         };
 

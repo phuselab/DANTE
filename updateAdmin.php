@@ -2,13 +2,15 @@
     session_start();
 
     if($_SESSION['loggedin']){
-        if(isset($_POST['password'])){
-
+        if (isset($_POST['password'])) {
             include 'model.php';
 
-            $password = json_decode(stripslashes($_POST['password']));
+            $password = json_decode($_POST['password']);
+            $hash = password_hash($password, PASSWORD_DEFAULT);
+            model::updateAdmin($hash);
 
-            model::updateAdmin($password);
+            $_SESSION['loggedin'] = false;
+            header("Location: login.php");                    
         }
     }
     

@@ -9,23 +9,25 @@ if($_SESSION['loggedin']){
 
     model::clearTables();
 
-    //array con i nomi delle cartelle
-    $arrayFolder = array_diff(scandir("video"), array('.', '..','.DS_Store'));
-    foreach ($arrayFolder as $folder){
-        echo $folder;
-        echo '</br>';
-
-        //carico il nome del gruppo sul DB
-        model::addGroup($folder);
-        $arrayVideo = array_diff(scandir("video/".$folder), array('.', '..','.DS_Store'));
-        foreach ($arrayVideo as $video){
-            echo $video;
+    if (is_dir("video")){
+        //array con i nomi delle cartelle
+        $arrayFolder = array_diff(scandir("video"), array('.', '..','.DS_Store'));
+        foreach ($arrayFolder as $folder){
+            echo $folder;
             echo '</br>';
 
-            //carico il video sul DB
-            model::addVideo($video);
-            //associo il video al gruppo sul DB
-            model::associateVidGroup($video, $folder);
+            //carico il nome del gruppo sul DB
+            model::addGroup($folder);
+            $arrayVideo = array_diff(scandir("video/".$folder), array('.', '..','.DS_Store'));
+            foreach ($arrayVideo as $video){
+                echo $video;
+                echo '</br>';
+
+                //carico il video sul DB
+                model::addVideo($video);
+                //associo il video al gruppo sul DB
+                model::associateVidGroup($video, $folder);
+            }
         }
     }
 }
