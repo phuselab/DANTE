@@ -11,7 +11,7 @@
         include 'model.php';
 
         if (!model::doesUserExist($id)){
-            header("Location: ../default.html");
+            header("Location: default.html");
         } else {
 
             if (isset($_GET['vid'])) {
@@ -23,7 +23,7 @@
         }
 
     } else {
-        header("Location: ../default.html");
+        header("Location: default.html");
 
     }
 ?>
