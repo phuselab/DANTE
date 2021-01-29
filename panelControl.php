@@ -56,13 +56,16 @@
             Annotators can be organized in annotation groups, where each group is allowed to annotate a specific subset of videos.<br>
             Such functionality is realized by placing the videos in the following hierarchy <code>/video/xxx/</code>, where
             <code>xxx</code> is the name of an annotation group.
+            <div class="alert alert-warning" role="alert">
+                <strong><i class="fa fa-warning" aria-hidden="true"></i></strong> Supported video formats are: Theora (Ogg), H.264 (MP4), HEVC (MP4), VP8 (WebM), VP9 (WebM), AV1 (WebM).<br> For a wider web browser compatibility we suggest to adopt H.264 (MP4) file format.
+            </div>
         </p>
         <p>
             <strong>Example</strong><br>
             To create two annotation groups, <em>alpha</em> and <em>beta</em>:
             <ol>
                 <li>create the following directories <code>/video/alpha/</code> and <code>/video/beta/</code></li>
-                <li>place the videos to be annotated in the relative directories</li>
+                <li>place the videos to be annotated in the relative directories.</li>
                 <li>press <strong>Sync now</strong> button</li>
                 <li>reload the page and add a new annotator, assigning the corresponding group</li>
             </ol>
